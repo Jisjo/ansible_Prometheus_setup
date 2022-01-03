@@ -1,0 +1,12 @@
+- name: "Installing grafana"
+  hosts: grafana
+  become: true
+
+  tasks:
+
+    - include_tasks: grafana_install.yml
+
+    
+    - name: "output"
+      debug:
+        msg: "http://<ip>:3000"
