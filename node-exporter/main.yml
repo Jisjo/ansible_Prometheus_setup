@@ -1,0 +1,7 @@
+---
+- name: "cofiguring node"
+  hosts: node
+  become: true
+
+  tasks:
+    - include_tasks: node_exporter.yml
