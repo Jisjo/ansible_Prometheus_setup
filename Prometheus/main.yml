@@ -1,0 +1,13 @@
+---
+- name: "cofiguring Prometheus"
+  hosts: prometheus
+  become: true
+
+  vars_files:
+    - variables.vars
+  tasks:
+    - include_tasks: prometheus_install.yml
+
+    - name: "output"
+      debug:
+        msg: "http://<ip>:9090"
