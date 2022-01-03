@@ -2,7 +2,7 @@
 # Result
 
 ```yml
-[root@ip-172-31-41-141 pro]# ansible-playbook -i ./../../inventory main.yml  
+[root@ip-172-31-41-141 pro]# ansible-playbook -i inventory main.yml  
 
 PLAY [cofiguring Prometheus] *********************************************************************************************************************************************
 
